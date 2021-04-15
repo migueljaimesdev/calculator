@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		292A5707262880B100A6AACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A5706262880B100A6AACD /* AppDelegate.swift */; };
-		292A5709262880B100A6AACD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A5708262880B100A6AACD /* SceneDelegate.swift */; };
-		292A570B262880B100A6AACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A570A262880B100A6AACD /* ViewController.swift */; };
-		292A570E262880B100A6AACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292A570C262880B100A6AACD /* Main.storyboard */; };
 		292A5710262880B300A6AACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292A570F262880B300A6AACD /* Assets.xcassets */; };
 		292A5713262880B300A6AACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292A5711262880B300A6AACD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +15,6 @@
 /* Begin PBXFileReference section */
 		292A5703262880B100A6AACD /* IOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		292A5706262880B100A6AACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		292A5708262880B100A6AACD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		292A570A262880B100A6AACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		292A570D262880B100A6AACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		292A570F262880B300A6AACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292A5712262880B300A6AACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		292A5714262880B300A6AACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,14 +51,19 @@
 			isa = PBXGroup;
 			children = (
 				292A5706262880B100A6AACD /* AppDelegate.swift */,
-				292A5708262880B100A6AACD /* SceneDelegate.swift */,
-				292A570A262880B100A6AACD /* ViewController.swift */,
-				292A570C262880B100A6AACD /* Main.storyboard */,
 				292A570F262880B300A6AACD /* Assets.xcassets */,
 				292A5711262880B300A6AACD /* LaunchScreen.storyboard */,
-				292A5714262880B300A6AACD /* Info.plist */,
+				292A571F262881E200A6AACD /* Supporting Files */,
 			);
 			path = "IOS-Calculator";
+			sourceTree = "<group>";
+		};
+		292A571F262881E200A6AACD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				292A5714262880B300A6AACD /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +125,6 @@
 			files = (
 				292A5713262880B300A6AACD /* LaunchScreen.storyboard in Resources */,
 				292A5710262880B300A6AACD /* Assets.xcassets in Resources */,
-				292A570E262880B100A6AACD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +135,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292A570B262880B100A6AACD /* ViewController.swift in Sources */,
 				292A5707262880B100A6AACD /* AppDelegate.swift in Sources */,
-				292A5709262880B100A6AACD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		292A570C262880B100A6AACD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				292A570D262880B100A6AACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		292A5711262880B300A6AACD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +204,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +276,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X4UX9FST4;
-				INFOPLIST_FILE = "IOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "IOS-Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X4UX9FST4;
-				INFOPLIST_FILE = "IOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "IOS-Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
